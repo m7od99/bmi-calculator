@@ -14,14 +14,10 @@ class BMICalculator extends StatelessWidget {
   }
 }
 
+//custom them
 ThemeData light() {
   return ThemeData.light().copyWith(
-    scaffoldBackgroundColor: Color(0xFFA87DA7),
-    primaryColor: Color(0xFFD496E0),
+    scaffoldBackgroundColor: Color(0xFFF2EB80),
+    primaryColor: Color(0xFFF2D230),
   );
 }
-
-// theme: ThemeData.dark().copyWith(
-// primaryColor: Color(0xff14171C),
-// scaffoldBackgroundColor: Color(0xff1B3),
-// ),

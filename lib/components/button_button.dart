@@ -19,7 +19,7 @@ class ButtomButton extends StatelessWidget {
           ),
         ),
         padding: EdgeInsets.all(10),
-        color: Color(0xFFBD2B83),
+        color: Color(0xFFD9D9D9),
       ),
     );
   }

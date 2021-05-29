@@ -77,7 +77,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: ReusableCard(
-              color: Color(0xFFD496E0),
+              color: kActiveCardColor,
               cardChild: heightWidget(context),
             ),
           ),
@@ -229,8 +229,8 @@ class _InputPageState extends State<InputPage> {
           data: SliderTheme.of(context).copyWith(
               activeTrackColor: Colors.white,
               inactiveTrackColor: Colors.white24,
-              thumbColor: Color(0xFFBD2B83),
-              overlayColor: Color(0x29BD2B83),
+              thumbColor: Color(0xFFD9D9D9),
+              overlayColor: Color(0x30D9D9D9),
               thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15),
               overlayShape: RoundSliderOverlayShape(overlayRadius: 30)),
           child: Slider(
