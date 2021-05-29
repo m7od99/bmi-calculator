@@ -28,7 +28,8 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        centerTitle: true,
+        title: Text('BMI CALCULATOR',style: TextStyle(color: Colors.black),),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -73,7 +74,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: ReuseableCard(
-              coluor: kActiveCardColor,
+              coluor: Colors.white,
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -98,10 +99,10 @@ class _InputPageState extends State<InputPage> {
                   ),
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
-                        activeTrackColor: Colors.white,
+                        activeTrackColor: Colors.black38,
                         inactiveTrackColor: Color(0xFF8D8E95),
-                        thumbColor: Color(0xFFEB1555),
-                        overlayColor: Color(0x29EB1555),
+                        thumbColor: Color(0xFF576EE7),
+                        overlayColor:Color(0x29576EE7),
                         thumbShape:
                             RoundSliderThumbShape(enabledThumbRadius: 15),
                         overlayShape:

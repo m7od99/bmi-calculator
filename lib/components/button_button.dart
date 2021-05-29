@@ -17,10 +17,8 @@ class ButtomButton extends StatelessWidget {
             style: kLargeButton,
           ),
         ),
-        padding: EdgeInsets.only(bottom: 20),
-        color: Color(0xFFEB1555),
-        width: double.infinity,
-        height: 80,
+        padding: EdgeInsets.all(10),
+        color: Color(0xFF576EE7),
       ),
     );
   }
