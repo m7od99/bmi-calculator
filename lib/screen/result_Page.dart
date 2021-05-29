@@ -1,7 +1,7 @@
 import 'package:bmi_calculator/components/button_button.dart';
-import 'package:bmi_calculator/content.dart';
-import 'package:flutter/material.dart';
 import 'package:bmi_calculator/components/reusable_card.dart';
+import 'package:bmi_calculator/constant/constant.dart';
+import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
   ResultPage(
@@ -17,7 +17,9 @@ class ResultPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('BMI CALCULATOR',style: TextStyle(color: Colors.black),),
+        title: Text(
+          'BMI CALCULATOR',
+        ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -35,8 +37,8 @@ class ResultPage extends StatelessWidget {
           ),
           Expanded(
             flex: 5,
-            child: ReuseableCard(
-              coluor: kActiveCardColor,
+            child: ReusableCard(
+              color: kActiveCardColor,
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,

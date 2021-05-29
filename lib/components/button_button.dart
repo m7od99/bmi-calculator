@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../content.dart';
+
+import '../constant/constant.dart';
 
 class ButtomButton extends StatelessWidget {
   ButtomButton({@required this.onTap, @required this.titleButton});
@@ -18,7 +19,7 @@ class ButtomButton extends StatelessWidget {
           ),
         ),
         padding: EdgeInsets.all(10),
-        color: Color(0xFF576EE7),
+        color: Color(0xFFBD2B83),
       ),
     );
   }
