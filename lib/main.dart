@@ -17,7 +17,7 @@ class BMICalculator extends StatelessWidget {
 //custom them
 ThemeData light() {
   return ThemeData.light().copyWith(
-    scaffoldBackgroundColor: Color(0xFFF2EB80),
-    primaryColor: Color(0xFFF2D230),
+    scaffoldBackgroundColor: Color(0xFF83D6D2),
+    primaryColor: Color(0xFF5CBDBB),
   );
 }

@@ -15,7 +15,7 @@ class IconContant extends StatelessWidget {
         Icon(
           icon,
           size: 80,
-          color: Colors.white,
+          color: Color(0xFFFAC4C4),
         ),
         SizedBox(
           height: 15,
