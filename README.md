@@ -1,6 +1,6 @@
 # bmi
 
-A App Tat cal
+app that calculat bmi 
 
 ## Getting Started
 
