@@ -1,4 +1,4 @@
-import 'package:bmi_calculator/components/button_button.dart';
+import 'package:bmi_calculator/components/calculate_button.dart';
 import 'package:bmi_calculator/components/reusable_card.dart';
 import 'package:bmi_calculator/constant/constant.dart';
 import 'package:flutter/material.dart';
@@ -60,7 +60,7 @@ class ResultPage extends StatelessWidget {
               ),
             ),
           ),
-          ButtomButton(
+          CalculateButton(
               onTap: () {
                 Navigator.pop(context);
               },

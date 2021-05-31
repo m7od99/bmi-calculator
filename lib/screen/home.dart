@@ -3,7 +3,7 @@ import 'package:bmi_calculator/screen/result_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../components/button_button.dart';
+import '../components/calculate_button.dart';
 import '../components/icon_contant.dart';
 import '../components/reusable_card.dart';
 import '../components/round_icon_button.dart';
@@ -14,12 +14,13 @@ enum Gender {
   female,
 }
 
-class InputPage extends StatefulWidget {
+class Home extends StatefulWidget {
   @override
-  _InputPageState createState() => _InputPageState();
+  _HomeState createState() => _HomeState();
 }
 
-class _InputPageState extends State<InputPage> {
+class _HomeState extends State<Home> {
+  //the default data for starting app
   Gender selectedGender;
   int height = 180;
   int weight = 60;
@@ -50,7 +51,7 @@ class _InputPageState extends State<InputPage> {
                     color: selectedGender == Gender.male
                         ? kActiveCardColor
                         : kInactiveCardColor,
-                    cardChild: IconContant(
+                    cardChild: IconContent(
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
                     ),
@@ -66,7 +67,7 @@ class _InputPageState extends State<InputPage> {
                     color: selectedGender == Gender.female
                         ? kActiveCardColor
                         : kInactiveCardColor,
-                    cardChild: IconContant(
+                    cardChild: IconContent(
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',
                     ),
@@ -99,7 +100,7 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          ButtomButton(
+          CalculateButton(
             titleButton: 'CALCULATE',
             onTap: () {
               CalculatorBrain calc =
@@ -122,6 +123,7 @@ class _InputPageState extends State<InputPage> {
     );
   }
 
+  // age widget
   Column ageWidget() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -162,6 +164,7 @@ class _InputPageState extends State<InputPage> {
     );
   }
 
+  //weight widget
   Column weightWidget() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -202,6 +205,7 @@ class _InputPageState extends State<InputPage> {
     );
   }
 
+  //height widget
   Column heightWidget(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
